@@ -144,7 +144,7 @@ void EmptyUserpic::paint(
 		int outerWidth,
 		int size) const {
 	paint(p, x, y, outerWidth, size, [&p, x, y, size] {
-		p.drawEllipse(x, y, size, size);
+		p.drawRect(x, y, size, size);
 	});
 }
 
@@ -195,7 +195,7 @@ void EmptyUserpic::PaintSavedMessages(
 	PainterHighQualityEnabler hq(p);
 	p.setBrush(bg);
 	p.setPen(Qt::NoPen);
-	p.drawEllipse(x, y, size, size);
+	p.drawRect(x, y, size, size);
 
 	PaintSavedMessagesInner(p, x, y, size, bg, fg);
 }

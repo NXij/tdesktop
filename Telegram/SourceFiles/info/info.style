@@ -719,14 +719,14 @@ editPeerInviteLinkBoxBottomSkip: 15px;
 historyTopBarBack: IconButton(infoTopBarBack) {
 	width: 52px;
 }
-topBarHeight: 54px;
+topBarHeight: 34px;
 topBarMenuPosition: point(-2px, 35px);
 topBarDuration: 200;
 topBarBackward: icon {{ "title_back", menuIconFg }};
 topBarForwardAlpha: 0.6;
 topBarBack: icon {{ "title_back", lightButtonFg }};
-topBarArrowPadding: margins(39px, 8px, 17px, 8px);
-topBarMinPadding: 5px;
+topBarArrowPadding: margins(0px, 2px, 5px, 2px);
+topBarMinPadding: 0px;
 topBarButton: RoundButton(defaultLightButton) {
 	width: -18px;
 	padding: margins(0px, 10px, 12px, 10px);
@@ -740,9 +740,9 @@ topBarSearch: IconButton {
 
 	icon: icon {{ "top_bar_search", menuIconFg }};
 	iconOver: icon {{ "top_bar_search", menuIconFgOver }};
-	iconPosition: point(4px, 11px);
+	iconPosition: point(4px, 2px);
 
-	rippleAreaPosition: point(0px, 7px);
+	rippleAreaPosition: point(0px, -2px);
 	rippleAreaSize: 40px;
 	ripple: RippleAnimation(defaultRippleAnimation) {
 		color: windowBgOver;
@@ -755,9 +755,9 @@ topBarMenuToggle: IconButton(topBarSearch) {
 
 	icon: menuToggleIcon;
 	iconOver: menuToggleIconOver;
-	iconPosition: point(16px, 17px);
+	iconPosition: point(16px, 8px);
 
-	rippleAreaPosition: point(0px, 7px);
+	rippleAreaPosition: point(0px, -2px);
 }
 topBarCall: IconButton(topBarSearch) {
 	icon: icon {{ "top_bar_call", menuIconFg }};

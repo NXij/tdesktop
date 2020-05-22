@@ -49,8 +49,8 @@ bool ValidVideoForAlbum(const FileMediaInformation::Video &video) {
 }
 
 QSize PrepareShownDimensions(const QImage &preview) {
-	constexpr auto kMaxWidth = 1280;
-	constexpr auto kMaxHeight = 1280;
+	constexpr auto kMaxWidth = 2560;
+	constexpr auto kMaxHeight = 2560;
 
 	const auto result = preview.size();
 	return (result.width() > kMaxWidth || result.height() > kMaxHeight)

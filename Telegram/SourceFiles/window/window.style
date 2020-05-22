@@ -10,21 +10,21 @@ using "ui/widgets/widgets.style";
 using "history/history.style";
 using "boxes/boxes.style"; // UserpicButton
 
-windowMinWidth: 380px;
-windowMinHeight: 480px;
+windowMinWidth: 180px;
+windowMinHeight: 280px;
 windowDefaultWidth: 800px;
 windowDefaultHeight: 600px;
 windowBigDefaultWidth: 1024px;
 windowBigDefaultHeight: 768px;
 
-columnMinimalWidthLeft: 260px;
+columnMinimalWidthLeft: 160px;
 columnMaximalWidthLeft: 540px;
-columnMinimalWidthMain: 380px;
+columnMinimalWidthMain: 180px;
 columnDesiredWidthMain: 512px;
 columnMinimalWidthThird: 292px;
 columnMaximalWidthThird: 392px;
 
-adaptiveChatWideWidth: 880px;
+adaptiveChatWideWidth: 180px;
 
 notifyBorder: windowShadowFgFallback;
 notifyBorderWidth: 1px;

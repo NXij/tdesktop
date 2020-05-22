@@ -9,9 +9,9 @@ using "ui/basic.style";
 
 using "ui/widgets/widgets.style";
 
-dialogsUnreadFont: font(12px bold);
-dialogsUnreadHeight: 19px;
-dialogsUnreadPadding: 5px;
+dialogsUnreadFont: font(11px bold);
+dialogsUnreadHeight: 14px;
+dialogsUnreadPadding: 4px;
 
 dialogsRipple: RippleAnimation(defaultRippleAnimation) {
 	color: dialogsRippleBg;
@@ -23,16 +23,16 @@ dialogsTextStyle: TextStyle(defaultTextStyle) {
 	linkFont: dialogsTextFont;
 	linkFontOver: dialogsTextFont;
 }
-dialogsDateFont: font(13px);
-dialogsDateSkip: 5px;
-dialogsNameTop: 2px;
+dialogsDateFont: font(11px);
+dialogsDateSkip: 4px;
+dialogsNameTop: 0px;
 
-dialogsRowHeight: 62px;
-dialogsFilterPadding: point(7px, 7px);
-dialogsFilterSkip: 4px;
-dialogsPhotoSize: 46px;
-dialogsPhotoPadding: 12px;
-dialogsPadding: point(10px, 8px);
+dialogsRowHeight: 40px;
+dialogsFilterPadding: point(0px, 0px);
+dialogsFilterSkip: 0px;
+dialogsPhotoSize: 30px;
+dialogsPhotoPadding: 5px;
+dialogsPadding: point(3px, 4px);
 
 dialogsOnlineBadgeStroke: 2px;
 dialogsOnlineBadgeSize: 10px;
@@ -41,7 +41,7 @@ dialogsOnlineBadgeDuration: 150;
 
 dialogsImportantBarHeight: 37px;
 
-dialogsSkip: 8px;
+dialogsSkip: 2px;
 
 dialogsWidthDuration: 120;
 dialogsTextWidthMin: 150px;
@@ -101,9 +101,9 @@ dialogsMenuToggle: IconButton {
 
 	icon: icon {{ "dialogs_menu", dialogsMenuIconFg }};
 	iconOver: icon {{ "dialogs_menu", dialogsMenuIconFgOver }};
-	iconPosition: point(10px, 10px);
+	iconPosition: point(10px, 5px);
 
-	rippleAreaPosition: point(0px, 0px);
+	rippleAreaPosition: point(0px, -5px);
 	rippleAreaSize: 40px;
 	ripple: RippleAnimation(defaultRippleAnimation) {
 		color: windowBgOver;

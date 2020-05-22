@@ -861,13 +861,13 @@ void FileLoadTask::process() {
 				photoThumbs.emplace('m', medium);
 				photoSizes.push_back(MTP_photoSize(MTP_string("m"), MTP_fileLocationToBeDeprecated(MTP_long(0), MTP_int(0)), MTP_int(medium.width()), MTP_int(medium.height()), MTP_int(0)));
 
-				auto full = (w > 1280 || h > 1280) ? fullimage.scaled(1280, 1280, Qt::KeepAspectRatio, Qt::SmoothTransformation) : fullimage;
+				auto full = (w > 2560 || h > 2560) ? fullimage.scaled(2560, 2560, Qt::KeepAspectRatio, Qt::SmoothTransformation) : fullimage;
 				photoThumbs.emplace('y', full);
 				photoSizes.push_back(MTP_photoSize(MTP_string("y"), MTP_fileLocationToBeDeprecated(MTP_long(0), MTP_int(0)), MTP_int(full.width()), MTP_int(full.height()), MTP_int(0)));
 
 				{
 					QBuffer buffer(&filedata);
-					full.save(&buffer, "JPG", 87);
+					full.save(&buffer, "JPG", 95);
 				}
 
 				photo = MTP_photo(

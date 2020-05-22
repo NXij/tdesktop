@@ -412,7 +412,7 @@ void Widget::fullSearchRefreshOn(rpl::producer<> events) {
 
 void Widget::updateControlsVisibility(bool fast) {
 	updateLoadMoreChatsVisibility();
-	_scroll->show();
+	_scroll->hide();
 	if (_forwardCancel) {
 		_forwardCancel->show();
 	}
